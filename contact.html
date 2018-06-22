@@ -149,14 +149,14 @@ p1 {
  </ul>
 </nav>
       <center>
-      <form>
+      <form action="contactform.php" method="post">
         <p1>EMAIL:</p1><br><br>
-          <input class ="email" type="text" name="email" value="">
+          <input placeholder="email@example.com" class ="email" type="text" name="email" value="">
           <br><br>
         <p1>CONENTS:</p1><br><br>
-          <textarea placeholder="Insert contents of message." cols="30" rows="5"></textarea>
+          <textarea placeholder="Insert contents of message." cols="30" rows="5" name="contents"></textarea>
           <br><br><br>
-          <input class="submit" type="submit" value="SUBMIT">
+          <input class="submit" type="submit" value="SUBMIT" name="submit">
       </form>
       </center>
   </body>
