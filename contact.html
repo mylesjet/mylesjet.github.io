@@ -9,6 +9,10 @@
   font-family: Font2;
   src: url('bfont.ttf');
 }
+    @font-face {
+        font-family: sfont;
+        src: url('sfont.ttf');
+    }
 h1 {
   font-family: TitleFont;
   font-size: 100px;
@@ -68,11 +72,64 @@ nav a:before{
 nav a:hover:before{
   width:100%;
 }
+    
+.simplecontainer {
+    margin-left: 400px;
+    margin-right: 400px;
+    margin-bottom: 100px;
+}
 
+input.email {
+        border: 2px solid grey;
+        border-radius: 5px;
+        width: 300px;
+        height: 40px;
+        padding: 12px 20px;
+        text-align: center;
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 21px !important;
+    }
+    
+input.contents {
+        border: 2px solid grey;
+        border-radius: 5px;
+        width: 300px;
+        height: 100px;
+        padding: 12px 20px;
+        padding-top: 0 !important;
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 15px !important;
+    }
+
+textarea {
+        resize:none;
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 15px !important;
+        border: 2px solid grey;
+        border-radius: 5px;
+        width: 335px;
+        height: 100px;
+    }
+    
+input.submit {
+        border-radius: 5px;
+        font-family: sfont;
+        font-size: 15px !important;
+        width: 200px;
+        height: 50px;
+        background-color: #6666ff;
+        border: 2px solid grey;
+        color: white;
+    }    
+p1 {
+        font-family: 'Roboto', sans-serif !important;
+        font-size: 21px !important;
+    } 
 </style>
   <head>
     <meta charset="utf-8">
     <title>Myles</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
     <div class="backbox">
     <center>
@@ -80,21 +137,7 @@ nav a:hover:before{
       </center>
     </div>
   <body>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <nav>
     <ul class="links">
       <center>
@@ -105,5 +148,16 @@ nav a:hover:before{
    </center>
  </ul>
 </nav>
+      <center>
+      <form>
+        <p1>EMAIL:</p1><br><br>
+          <input class ="email" type="text" name="email" value="">
+          <br><br>
+        <p1>CONENTS:</p1><br><br>
+          <textarea placeholder="Insert contents of message." cols="30" rows="5"></textarea>
+          <br><br><br>
+          <input class="submit" type="submit" value="SUBMIT">
+      </form>
+      </center>
   </body>
 </html>
